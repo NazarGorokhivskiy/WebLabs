@@ -1,0 +1,102 @@
+/* * * * * * * * * * * * * * * *  * * * * *
+
+	SECTION 1
+
+* * * * * * * * * * * * * * * * * * * * * */
+
+section.first {
+	background: url(../images/football1.jpg) center top no-repeat / cover;
+	height: 600px;
+}
+
+.first .titles {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 160px;
+}
+
+.first .title {
+	display: inline;
+	background: rgba(0,0,0,.6);
+	padding: 8px;
+	font: bold 40px "Roboto", sans-serif;
+	border: 10px solid rgba(0,0,0, 0.05);
+	border-radius: 10px;
+}
+
+.first .subtitle {
+	background: rgba(0,0,0,.6);
+	border: 10px solid rgba(0,0,0, 0.05);
+	border-radius: 10px;
+	font: italic 24px "Roboto", sans-serif;
+	margin: 50px auto 0;
+	max-width: 520px;
+	padding: 8px;
+}
+
+.first .subtitle-author {
+	font-size: 16px;
+	float: right;
+	margin-top: 8px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* * * * * * * * * * * * * * * *  * * * * *
+
+	SECTION 2
+
+* * * * * * * * * * * * * * * * * * * * * */
+
+section.second {
+	margin: 40px;
+}
+
+.second .content {
+	background: #181818;
+	padding: 30px;
+}
+
+.second p {
+	line-height: 24px;
+	color: #bbb;
+}
+
+/* * * * * * * * * * * * * * * *  * * * * *
+
+	SECTION 3
+
+* * * * * * * * * * * * * * * * * * * * * */
+
+.third .content {
+	background: #181818;
+	padding: 30px;
+	margin-bottom: 20px;
+}
+
+.third h1 {
+	text-align: center;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery .g-row {
+	display: flex;
+	flex: 1;
+}
+
+.gallery .g-item {
+	flex: 1;
+	background: #272828 url(../images/img-pattern.png) no-repeat center / cover;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+}

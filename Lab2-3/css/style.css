@@ -3,6 +3,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background: url(../images/black_pattern.png);
 	color: white;
+	margin-top: -1px;
+	padding-top: 1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,6 +43,11 @@ h1 {
 	font-size: 40px;
 }
 
+content {
+	position: relative;
+	top: 80px;
+}
+
 /* * * * * * * * * * * * * * * *  * * * * *
 
 	HEADER
@@ -51,8 +58,11 @@ header {
 	height: 60px;
 	background: black;
 	padding: 10px 50px;
+	width: 100%;
 	font-size: 16px;
 	text-transform: uppercase;
+	position: fixed;
+	z-index: 1;
 }
 
 .nav {
@@ -77,12 +87,23 @@ header {
 	height: 100%;
 	vertical-align: middle;
 	box-sizing: border-box;
-	padding: 20px 20px;
+	padding: 20px 30px;
 }
 
 .nav a:hover {
 	color: orange;
 	background: #222;
+	animation-name: zooming;
+	animation-duration: .5s;
+	animation-direction: linear;
+}
+
+.nav .expandable {
+	transition: 0s 2s;
+}
+
+.nav .expandable:hover {
+	transition: 0;	
 }
 
 .nav .expandable:hover .sublist {
@@ -94,6 +115,7 @@ header {
 	position: absolute;
 	background: black;
 	min-width: 160px;
+	top: 70px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -121,6 +143,9 @@ header .logo {
 header .icon-logo {
 	width: 44px;
 	margin-left: 12px;
+	animation-name: slide_rotate;
+	animation-duration: 2s;
+	animation-direction: linear;
 }
 
 header .title {
@@ -131,108 +156,12 @@ header .title {
 	letter-spacing: 1px;
 }
 
-/* * * * * * * * * * * * * * * *  * * * * *
-
-	SECTION 1
-
-* * * * * * * * * * * * * * * * * * * * * */
-
-section.first {
-	background: url(../images/football1.jpg) center top no-repeat / cover;
-	height: 600px;
+header .orange {
+	animation-name: appear;
+	animation-duration: 1.5s;
+	animation-timing-function: cubic-bezier(1,.01,1,-0.49);
 }
 
-.first .titles {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 160px;
-}
-
-.first .title {
-	display: inline;
-	background: rgba(0,0,0,.6);
-	padding: 8px;
-	font: bold 40px "Roboto", sans-serif;
-	border: 10px solid rgba(0,0,0, 0.05);
-	border-radius: 10px;
-}
-
-.first .subtitle {
-	background: rgba(0,0,0,.6);
-	border: 10px solid rgba(0,0,0, 0.05);
-	border-radius: 10px;
-	font: italic 24px "Roboto", sans-serif;
-	margin: 50px auto 0;
-	max-width: 520px;
-	padding: 8px;
-}
-
-.first .subtitle-author {
-	font-size: 16px;
-	float: right;
-	margin-top: 8px;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* * * * * * * * * * * * * * * *  * * * * *
-
-	SECTION 2
-
-* * * * * * * * * * * * * * * * * * * * * */
-
-section.second {
-	margin: 40px;
-}
-
-.second .content {
-	background: #181818;
-	padding: 30px;
-}
-
-.second p {
-	line-height: 24px;
-	color: #bbb;
-}
-
-/* * * * * * * * * * * * * * * *  * * * * *
-
-	SECTION 3
-
-* * * * * * * * * * * * * * * * * * * * * */
-
-.third .content {
-	background: #181818;
-	padding: 30px;
-	margin-bottom: 20px;
-}
-
-.third h1 {
-	text-align: center;
-}
-
-.gallery {
-	display: flex;
-	flex-direction: column;
-}
-
-.gallery .g-row {
-	display: flex;
-	flex: 1;
-}
-
-.gallery .g-item {
-	flex: 1;
-	background: #272828 url(../images/img-pattern.png) no-repeat center / cover;
-	width: 200px;
-	height: 200px;
-	margin: 20px;
-}
 
 /* * * * * * * * * * * * * * * *  * * * * *
 
@@ -243,6 +172,7 @@ section.second {
 footer {
 	background: black;
 	height: 80px;
+	margin-top: 100px;
 }
 
 footer .content {
@@ -254,4 +184,40 @@ footer .content {
 .footer-title {
 	color: #aaa;
 	margin: 0 auto;
+}
+
+/*----------Animations----------*/
+
+@keyframes slide_rotate {
+	from {
+		transform: rotate(0deg);
+		opacity: 0.0;     
+		margin-left: -100px;
+	}
+	to {
+		transform: rotate(360deg);
+		opacity: 1;     
+		margin-right: 0px;
+	}
+}
+
+@keyframes zooming {
+	from {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	to {
+		transform: scale(1.0);
+	}
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
