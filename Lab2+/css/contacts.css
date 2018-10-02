@@ -1,0 +1,30 @@
+/* * * * * * * * * * * * *
+
+		SECTION 1
+
+* * * * * * * * * * * * */
+.first {
+	margin: 30px 0;
+}
+
+.first .content {
+	background: #181818;
+}
+
+.contacts {
+	height: 90vh;
+	padding: 20px;
+}
+
+.contacts h1 {
+	text-align: center;
+}
+
+.map {
+	height: 90vh;
+	padding: 20px;
+}
+
+.map-picture {
+	width: 100%;
+}

@@ -1,9 +1,5 @@
-header .content {
-	max-width: 960px;
-}
-
 .content {
-	max-width: 1100px;
+	max-width: 1088px;
 }
 
 
@@ -14,13 +10,14 @@ header .content {
 * * * * * * * * * * * * */
 
 .first {
-	margin: 30px;
+	margin: 30px 0;
 }
 
 .first .content {
 	background: #181818;
-	padding: 30px;
+	padding: 20px;
 	margin-top: 30px;
+	box-sizing: border-box;
 }
 
 .first h1 {
@@ -29,15 +26,19 @@ header .content {
 
 .news {
 	margin-top: 20px;
-	display: flex;
+	justify-content: center;
 }
 
-.news-block {     width: 240px;     height: 350px;     background: #0d0d0d;
-padding: 20px;     border-radius: 10px;     box-sizing: border-box;     color:
-#eee;     cursor: pointer; }
-
-.news-flex-block {
-	flex: 1;
+.news-block {
+	max-width: 250px;
+	max-height: 360px;
+	background: #0d0d0d;
+	margin: 10px auto;
+	padding: 10px;
+	overflow: hidden;
+	border-radius: 10px;
+    color: #eee;
+    cursor: pointer;
 }
 
 .news-img {
@@ -48,6 +49,7 @@ padding: 20px;     border-radius: 10px;     box-sizing: border-box;     color:
 .news-block h3 {
 	text-align: center;
 	margin-top: 8px;
+	font-size: 24px;
 }
 
 .news-block p {
