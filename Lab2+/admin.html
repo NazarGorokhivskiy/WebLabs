@@ -16,7 +16,7 @@
 
     <!-- Own CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
     <header>
@@ -47,10 +47,10 @@
                             <a class="nav-link" href="fans.html">Fans</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contacts.html">Contacts <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="contacts.html">Contacts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="admin.html">Admin</a>
+                            <a class="nav-link active" href="admin.html">Admin <span class="sr-only">(current)</span></a>
                         </li>
                   </ul>
                 </div>
@@ -62,20 +62,27 @@
         </div> 
     </header>
     <content>
-        <section class="first" id="first">
-            <div class="content container row">
-                <div class="contacts col-lg-5">
-                    <div class="contacts-content">
-                        <h1>Contacts</h1>
-                        <ul>
-                            <li>Email: americanfootball@gmail.com</li>
-                            <li>Phone number: +555 038 228 1337</li>
-                            <li>Adress: Ukraine, Lviv: Bandery street 69</li>
-                        </ul>
+        <section class="first">
+            <div class="content">
+                <h1>Add news</h1>
+                <div class="adding-image row">
+                    <div class="col-lg-7">
+                        <img src="images/add_image.png" alt="">
+                    </div>
+                    <div class="col-lg-4 add-image-btn">
+                        <button>Add image</button>
                     </div>
                 </div>
-                <div class="map col-lg-7">
-                    <img src="images/location.png" class="map-picture"></img>
+            </div>
+        </section>
+        <section class="second">
+            <div class="content row">
+                <div class="forms col-lg-7">
+                    <textarea name="textarea-title" placeholder="News title..." id="title" cols="30" rows="2"></textarea>
+                    <textarea name="textarea-text" placeholder="News description..." id="text" cols="30" rows="10"></textarea>
+                </div>
+                <div class="col-lg-4">
+                    <button>Add news</button>
                 </div>
             </div>
         </section>

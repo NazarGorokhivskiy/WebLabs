@@ -3,6 +3,7 @@
 		SECTION 1
 
 * * * * * * * * * * * * */
+
 .first {
 	margin: 30px 0;
 }
@@ -12,17 +13,32 @@
 }
 
 .contacts {
-	height: 90vh;
-	padding: 20px;
+	padding: 10px;
+}
+
+.contacts-content {
+	background: #232323;
+	padding: 10px;
 }
 
 .contacts h1 {
+	text-align: center;
+	border-bottom: 2px white solid;
+	padding-bottom: 5px;
+}
+
+.contacts ul {
+	margin-top: 20px;
+}
+
+.contacts li {
+	height: 40px;
 	text-align: center;
 }
 
 .map {
 	height: 90vh;
-	padding: 20px;
+	padding: 10px;
 }
 
 .map-picture {

@@ -16,7 +16,7 @@
 
     <!-- Own CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/fans.css">
 </head>
 <body>
     <header>
@@ -44,10 +44,10 @@
                             <a class="nav-link" href="news.html">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="fans.html">Fans</a>
+                            <a class="nav-link active" href="fans.html">Fans <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contacts.html">Contacts <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="contacts.html">Contacts</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="admin.html">Admin</a>
@@ -59,26 +59,34 @@
                 <span class="title d-none d-md-block">American <span class="orange">football</span></span>
                 <img class="icon-logo" src="images/logo.svg" alt="af logo">
             </div>
-        </div> 
+        </div>
     </header>
     <content>
-        <section class="first" id="first">
-            <div class="content container row">
-                <div class="contacts col-lg-5">
-                    <div class="contacts-content">
-                        <h1>Contacts</h1>
-                        <ul>
-                            <li>Email: americanfootball@gmail.com</li>
-                            <li>Phone number: +555 038 228 1337</li>
-                            <li>Adress: Ukraine, Lviv: Bandery street 69</li>
-                        </ul>
+        <div class="content">
+            <h1>Fan request</h1>
+            <div class="reqests">
+                <div class="request">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia error saepe doloremque laudantium deleniti nulla molestiae vero necessitatibus corporis laborum architecto facere reiciendis similique a aliquam consectetur veniam voluptas quasi ullam quisquam laboriosam odit, provident qui sed. Architecto quo, unde!</p>
+                    <div class="req-footer">
+                        <div class="date">10.10.2018, 13:37</div>
+                        <div class="nickname">FootballFan228</div>
                     </div>
                 </div>
-                <div class="map col-lg-7">
-                    <img src="images/location.png" class="map-picture"></img>
+                <div class="request">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, recusandae at sequi dolore, obcaecati, quibusdam rem ipsum optio officia quaerat quasi voluptatum dolor quia ipsa eos expedita omnis facilis necessitatibus. Nesciunt architecto, quae ex, accusamus reiciendis id eligendi quia aut!</p>
+                    <div class="req-footer">
+                        <div class="date">10.10.2018, 13:37</div>
+                        <div class="nickname">FootballFan228</div>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="adding-request">
+                <textarea name="textarea" placeholder="Add request..." id="" cols="70" rows="8"></textarea>
+                <div class="btn">
+                    <button>Send</button>
+                </div>
+            </div>
+        </div>
     </content>
     <footer>
         <div class="content">
