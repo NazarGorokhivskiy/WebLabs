@@ -5,8 +5,12 @@ section .content {
 	box-sizing: border-box;
 }
 
-section h1 {
+section h1, h4 {
 	text-align: center;
+}
+
+h4 {
+	margin: 20px 0;
 }
 
 /* * * * * * * * * * * * *

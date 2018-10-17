@@ -11,6 +11,13 @@ section .content {
 	padding: 20px;
 }
 
+.error-textarea {
+	border-color: #ff2222;
+}
+
+.error-textarea::placeholder {
+    color: #ff2222;
+}
 /* * * * * * * * * * * * *
 
 		SECTION 1
@@ -40,4 +47,13 @@ section .content {
 
 .second textarea#title {
 	min-height: 50px;
+}
+
+input.upload-image-button {
+	background: #f90;
+	color: black;
+	font-size: 16px;
+	border: 5px #f90 solid;
+	border-radius: 8px;
+	font-weight: 600;
 }
