@@ -44,3 +44,11 @@ content .request {
 .adding-request button {
 	width: 120px;
 }
+
+.error-textarea {
+	border-color: #ff2222;
+}
+
+.error-textarea::placeholder {
+    color: #ff2222;
+}

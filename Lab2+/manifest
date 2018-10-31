@@ -19,6 +19,8 @@ images/tab_logo.png
 js/bootstrap.js
 js/jquery.js
 js/poppe.js
+js/news.js
+js/admin.js
 
 NETWORK:
 *
