@@ -20,7 +20,8 @@ js/bootstrap.js
 js/jquery.js
 js/poppe.js
 js/news.js
-js/admin.js
+js/Indexed.js
+js/fansAndNews.js
 
 NETWORK:
 *
