@@ -186,9 +186,6 @@ function sendNews(title, article) {
 function sendAppeal(appeal) {
 	var box = new Appeal('appeal', appeal, new Date().getTime().toString());
 
-	/*box.appeal = appeal;
-	box.id = new Date().getTime().toString();
-	box.type = 'appeal';*/
 	storeMessage(box);
 
 	return false;

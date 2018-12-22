@@ -1,7 +1,7 @@
 //CHECK APPEAL FUNCTIONS----------------------------------------------------
 
 function checkAppeal() {
-    var feedbackContainer = document.getElementById('feedback-container');
+    var feedbackContainer = document.getElementById('feedback-text');
 
     if (feedbackContainer.value === "" || feedbackContainer.value === "Write an appeal...") {
         feedbackContainer.style.borderColor = 'red';
@@ -13,7 +13,7 @@ function checkAppeal() {
         alert("Your appeal added successfully!");
     }
 }
-
+ 
 const feedbackTemplateAppeal = (text, date, nickname) => `
     <div class="request">
         <p>${text}</p>
